@@ -1,0 +1,11 @@
+.searchForm {
+}
+.searchForm--searchIcon {
+}
+.searchForm--input {
+  outline: none;
+  width: 225px;
+  max-width: 100%;
+}
+.searchForm--label {
+}
