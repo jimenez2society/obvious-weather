@@ -31,6 +31,12 @@
 .exitSideBar {
   display: none;
 }
+.logo-reg {
+  display: block;
+}
+.logo-sm {
+  display: none;
+}
 @media screen and (max-width: 1295px) {
   .logo {
     position: absolute;
@@ -71,5 +77,15 @@
   }
   .currentCityDisplay {
     display: none;
+  }
+}
+/* width="163" height="61" */
+@media screen and (max-width: 530px) {
+  .logo-reg {
+    display: none;
+  }
+  .logo-sm {
+    display: block;
+    transform: translateY(25%);
   }
 }
