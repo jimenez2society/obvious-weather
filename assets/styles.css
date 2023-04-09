@@ -1,10 +1,12 @@
-@import url(./css/sideBar.css);
-@import url(./css/mainContent.css);
+@import url(./css/sideBar/sideBar.css);
+@import url(./css/mainContent/mainContent.css);
 :root {
+  --primary: #6754ef;
+  --primary-faded: rgba(103, 84, 239, 2.5%);
   --input-background: #f6f6f6;
   --soft-text: rgba(0, 0, 0, 51%);
   --main-text: #292d32;
-  --divider-border: 1px solid #e0e0e0;
+  --divider-border: 0.5px solid #e1e1e1;
   --hover-highlight: rgba(150, 150, 150, 10%);
 }
 * {

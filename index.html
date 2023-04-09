@@ -23,6 +23,14 @@
         <!-- CONTENT -->
         <div class="sideBar--content">
           <!-- SEARCH FORM -->
+          <span class="exitSideBar">
+            <img src="./assets/svg/exit.svg" alt="" />
+          </span>
+          <img
+            class="sideBar--content--logo"
+            src="./assets/svg/sideBarLogo.svg"
+            alt=""
+          />
           <form id="searchForm" class="searchForm">
             <img
               class="searchForm--searchIcon"
@@ -36,10 +44,14 @@
               id="search"
               placeholder="Search city"
             />
+            <div class="searchResults">
+              <span class="searchResults--title">Results</span>
+              <ul class="searchResults--list"></ul>
+            </div>
           </form>
           <div class="currentCityDisplay">
             <h3 class="sideBar--title">Current City</h3>
-            <p class="currentCity--content">Houston, Tx</p>
+            <p class="currentCity--content">No current city</p>
           </div>
           <div class="recentActivity">
             <div class="recentActivity--title">
@@ -47,21 +59,7 @@
             </div>
             <div class="recentActivity--list-container">
               <ul class="recentActivity--list">
-                <li class="recentActivity--list-item">
-                  <a href="#" class="recentActivity--list-item-link"
-                    >Boston, New York</a
-                  >
-                </li>
-                <li class="recentActivity--list-item">
-                  <a href="#" class="recentActivity--list-item-link"
-                    >Denver, Colorado</a
-                  >
-                </li>
-                <li class="recentActivity--list-item">
-                  <a href="#" class="recentActivity--list-item-link"
-                    >Albuquerque, New Mexico</a
-                  >
-                </li>
+                <span class="noRecents">No recent activity</span>
               </ul>
             </div>
           </div>
@@ -70,18 +68,113 @@
       <!-- MAIN CONTENT -->
       <div class="main">
         <header class="main--header">
-          <div class="currentCityName">
-            <h2>Houston, Tx</h2>
-          </div>
+          <!-- <div class="currentCityName">
+            
+          </div> -->
           <div class="date--container">
+            <h2>Houston, Tx</h2>
             <span class="day">Today</span>
             <span class="date">Saturday, April 8, 2023</span>
           </div>
         </header>
         <section class="currentCity--weather">
-            <div class="temp"></div>
-            <div class="windspeed"></div>
-            <div class="humidty"></div>
+          <div class="currentCity--item">
+            <img
+              class="temp-img"
+              src="./assets/svg/weatherHotIcons.svg"
+              alt=""
+            />
+            <span class="currentCity--title">Temp</span>
+            <span class="currentCity--result">36°C</span>
+          </div>
+          <div class="currentCity--item">
+            <span class="currentCity--bg">3.94</span>
+            <span class="currentCity--title">Wind speed (MPH)</span>
+            <span class="currentCity--result">3.94</span>
+          </div>
+          <div class="currentCity--item">
+            <span class="currentCity--bg">56%</span>
+            <span class="currentCity--title">Humidity</span>
+            <span class="currentCity--result">56%</span>
+          </div>
+        </section>
+        <section class="days-ahead">
+          <!-- data 1 -->
+          <div class="day-ahead--item">
+            <span class="day-ahead--item-date">Tomorrow, April 9, 2023</span>
+
+            <div class="day-ahead--data">
+              <div class="data--item">
+                <span class="data--item-title">Temp</span>
+                <span class="data--item-data">36°C</span>
+              </div>
+              <div class="data--item">
+                <span class="data--item-title">Wind speed (MPH)</span>
+                <span class="data--item-data">4.82</span>
+              </div>
+              <div class="data--item">
+                <span class="data--item-title">Humidity</span>
+                <span class="data--item-data">68%</span>
+              </div>
+            </div>
+          </div>
+          <!-- data 2 -->
+          <div class="day-ahead--item">
+            <span class="day-ahead--item-date">Monday, April 10, 2023</span>
+
+            <div class="day-ahead--data">
+              <div class="data--item">
+                <span class="data--item-title">Temp</span>
+                <span class="data--item-data">36°C</span>
+              </div>
+              <div class="data--item">
+                <span class="data--item-title">Wind speed (MPH)</span>
+                <span class="data--item-data">4.82</span>
+              </div>
+              <div class="data--item">
+                <span class="data--item-title">Humidity</span>
+                <span class="data--item-data">68%</span>
+              </div>
+            </div>
+          </div>
+          <!-- data 3 -->
+          <div class="day-ahead--item">
+            <span class="day-ahead--item-date">Monday, April 10, 2023</span>
+
+            <div class="day-ahead--data">
+              <div class="data--item">
+                <span class="data--item-title">Temp</span>
+                <span class="data--item-data">36°C</span>
+              </div>
+              <div class="data--item">
+                <span class="data--item-title">Wind speed (MPH)</span>
+                <span class="data--item-data">4.82</span>
+              </div>
+              <div class="data--item">
+                <span class="data--item-title">Humidity</span>
+                <span class="data--item-data">68%</span>
+              </div>
+            </div>
+          </div>
+          <!-- data 4 -->
+          <div class="day-ahead--item">
+            <span class="day-ahead--item-date">Wednesday, April 12, 2023</span>
+
+            <div class="day-ahead--data">
+              <div class="data--item">
+                <span class="data--item-title">Temp</span>
+                <span class="data--item-data">36°C</span>
+              </div>
+              <div class="data--item">
+                <span class="data--item-title">Wind speed (MPH)</span>
+                <span class="data--item-data">4.82</span>
+              </div>
+              <div class="data--item">
+                <span class="data--item-title">Humidity</span>
+                <span class="data--item-data">68%</span>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>

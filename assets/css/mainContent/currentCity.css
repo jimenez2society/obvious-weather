@@ -1,0 +1,61 @@
+.currentCity--weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 145px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.currentCity--item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.currentCity--bg {
+  position: absolute;
+  font-size: 156px;
+  color: var(--primary-faded);
+  top: 0;
+  left: -50%;
+}
+.temp-img {
+  position: absolute;
+  top: -35px;
+  z-index: 0;
+}
+.currentCity--title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.115em;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+.currentCity--result {
+  font-size: 56px;
+  line-height: 67.77px;
+  letter-spacing: 0.115em;
+  font-weight: 700;
+  color: var(--primary);
+  z-index: 1;
+}
+@media screen and (max-width: 1440px) {
+  .currentCity--weather {
+    padding: 0 120px;
+  }
+  .currentCity--bg {
+    font-size: 100px;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-30%);
+  }
+}
+@media screen and (max-width: 1295px) {
+  .currentCity--weather {
+    padding: 0 0px;
+  }
+}

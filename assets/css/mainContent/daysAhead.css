@@ -1,0 +1,27 @@
+.days-ahead {
+  padding: 0 145px;
+  display: flex;
+  justify-content: space-between;
+}
+.data--item {
+  display: flex;
+  flex-direction: column;
+  color: var(--main-text);
+  padding-bottom: 30px;
+}
+.data--item-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.94px;
+  letter-spacing: 0.115em;
+  margin-bottom: 10px;
+}
+.data--item-data {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--primary);
+}
+.day-ahead--item-date {
+  display: block;
+  margin-bottom: 60px;
+}
