@@ -61,3 +61,14 @@
 .show {
   display: block;
 }
+@media screen and (max-width: 1295px) {
+  .recentActivity--title {
+    padding-left: 0px;
+  }
+  .recentActivity--list {
+    padding: 10px 5px;
+  }
+  .recentActivity--list-item a {
+    font-size: 12px;
+  }
+}

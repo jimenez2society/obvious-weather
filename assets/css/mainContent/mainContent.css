@@ -3,16 +3,13 @@
 .main {
   grid-column: 3 /-1;
 }
-@media screen and (max-width: 1295px) {
-  .main {
-    grid-column: 1 /-1;
-  }
-}
+
 .main--header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 170px;
+  margin-bottom: 135px;
+  margin-top: 135px;
 }
 .date--container h2 {
   font-size: 26px;
@@ -38,4 +35,9 @@
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.115em;
+}
+@media screen and (max-width: 1295px) {
+  .main {
+    grid-column: 1 /-1;
+  }
 }

@@ -83,3 +83,8 @@
   background-color: var(--hover-highlight);
   color: var(--main-text);
 }
+@media screen and (max-width: 1295px) {
+  .searchForm--input {
+    width: 100%;
+  }
+}
