@@ -1,4 +1,12 @@
 @import url(./css/sideBar.css);
+@import url(./css/mainContent.css);
+:root {
+  --input-background: #f6f6f6;
+  --soft-text: rgba(0, 0, 0, 51%);
+  --main-text: #292d32;
+  --divider-border: 1px solid #e0e0e0;
+  --hover-highlight: rgba(150, 150, 150, 10%);
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +14,18 @@
 }
 body {
   min-height: 100vh;
-  background-color: red;
+  font-family: "Inter", sans-serif;
 }
 .container {
   display: grid;
   margin: 0 60px;
   padding-top: 40px;
   grid-template-columns: repeat(12, 1fr);
+}
+ul {
+  list-style: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
 }
