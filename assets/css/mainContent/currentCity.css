@@ -59,3 +59,17 @@
     padding: 0 0px;
   }
 }
+@media screen and (max-width: 730px) {
+  .currentCity--item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+  }
+  .currentCity--weather {
+    flex-direction: column;
+  }
+  .currentCity--result {
+    text-align: center;
+  }
+}

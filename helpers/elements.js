@@ -1,3 +1,30 @@
+export class Element {
+  constructor(type) {
+    let element = document.createElement(type);
+    this.element = element;
+  }
+  addClass(className) {
+    if (!this.element.className) {
+      this.element.className = className;
+    } else {
+      this.element.classList.add(className);
+    }
+    return this;
+  }
+  addId(id) {
+    this.element.id = id;
+    return this;
+  }
+  content(content) {
+    this.element.textContent = content;
+    return this;
+  }
+  append(child) {
+    this.element.appendChild(child);
+    return this;
+  }
+}
+
 export const createResultsItem = (name, state, country) => {
   let searchResultsList = document.querySelector(".searchResults--list");
   let li = document.createElement("li");
@@ -30,7 +57,6 @@ export const updateRecentItems = () => {
     a.appendChild(exit);
     li.appendChild(a);
     list.appendChild(li);
-    console.log({ recentsList });
   });
 };
 export const createRecentItem = (e, currentCity) => {
