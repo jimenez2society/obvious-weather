@@ -42,6 +42,9 @@
               src="./assets/svg/searchIco.svg"
               alt=""
             />
+            <button class="submit-arrow">
+              <img src="./assets/svg/submitArrow.svg" alt="" />
+            </button>
             <input
               class="searchForm--input"
               type="text"
@@ -71,36 +74,41 @@
         </div>
       </div>
       <!-- MAIN CONTENT -->
+      <div class="empty-main">
+        <div class="empty-main-content">
+          <img class="main-bg-img" src="./assets/svg/logo-bg.svg" alt="" />
+          <p class="main-empty-text">Search for results</p>
+        </div>
+      </div>
       <div class="main">
         <header class="main--header">
           <!-- <div class="currentCityName">
             
           </div> -->
           <div class="date--container">
-            <h2>Houston, Tx</h2>
+            <h2 class="currentCity--name">Houston, Tx</h2>
             <span class="day">Today</span>
-            <span class="date">Saturday, April 8, 2023</span>
+            <span class="currentCity--date">Saturday, April 8, 2023</span>
           </div>
         </header>
         <section class="currentCity--weather">
           <div class="currentCity--item">
             <img
               class="temp-img"
-              src="./assets/svg/weatherHotIcons.svg"
-              alt=""
+              alt="image to represent the tempature | hot or cold"
             />
-            <span class="currentCity--title">Temp</span>
-            <span class="currentCity--result">36°C</span>
+            <span class="currentCity--temp-title">Temp</span>
+            <span class="currentCity--temp-result"></span>
           </div>
           <div class="currentCity--item">
-            <span class="currentCity--bg">3.94</span>
-            <span class="currentCity--title">Wind speed (MPH)</span>
-            <span class="currentCity--result">3.94</span>
+            <span class="currentCity--wind-bg"></span>
+            <span class="currentCity--wind-title">Wind speed (MPH)</span>
+            <span class="currentCity--wind-result"></span>
           </div>
           <div class="currentCity--item">
-            <span class="currentCity--bg">56%</span>
-            <span class="currentCity--title">Humidity</span>
-            <span class="currentCity--result">56%</span>
+            <span class="currentCity--humidity-bg"></span>
+            <span class="currentCity--humidity-title">Humidity</span>
+            <span class="currentCity--humidity-result"></span>
           </div>
         </section>
         <!-- days ahead -->

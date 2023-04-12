@@ -1,10 +1,13 @@
 @import url(./currentCity.css);
 @import url(./daysAhead.css);
-@import url(./daysAheadCarousel.css);
+@import url(./emptyMain.css);
 .main {
+  display: none;
   grid-column: 3 /-1;
 }
-
+.main-show {
+  display: block;
+}
 .main--header {
   display: flex;
   align-items: center;
@@ -45,18 +48,19 @@
     grid-column: 1 /-1;
   }
   .main--header {
-  margin-top: 135px;
-}
+    margin-top: 135px;
+  }
   .hamburger-icon {
+
     margin-top: 25px;
     margin-left: 30px;
     left: 0;
     position: absolute;
-    display: block;
+    display: flex;
     width: max-content;
     padding: 4px;
-    width: 40px;
-    height: 24px;
+      width: 40px;
+    height: 40px;
   }
   .date--container h2 {
     margin-bottom: 30px;
@@ -67,7 +71,7 @@
     margin-bottom: 110px;
   }
   .hamburger-icon {
-    width: 30px;
-    height: 12px;
+  width: 30px;
+    height: 30px;
   }
 }

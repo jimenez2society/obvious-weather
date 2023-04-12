@@ -1,5 +1,6 @@
-@import url(./searchForm.css);
 @import url(./recentActivity.css);
+@import url(./searchForm.css);
+
 .sideBar {
   grid-column: 1/3;
 }

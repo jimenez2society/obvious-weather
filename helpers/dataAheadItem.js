@@ -11,7 +11,7 @@ export const renderDataAheadItem = (d) => {
     .content("Temp");
   let tempData = new Element("span")
     .addClass("data--item-data")
-    .content(`${d.temp}°C`);
+    .content(`${d.temp}°F`);
   let windTitle = new Element("span")
     .addClass("data--item-title")
     .content("Wind speed (MPH)");
@@ -23,7 +23,7 @@ export const renderDataAheadItem = (d) => {
     .content("Humidity");
   let humidityData = new Element("span")
     .addClass("data--item-data")
-    .content(d.humidity);
+    .content(`${d.humidity}%`);
   let dayAheadData = new Element("div").addClass("day-ahead--data");
   let dataItemTemp = new Element("div").addClass("data--item");
   let dataItemWind = new Element("div").addClass("data--item");
@@ -41,4 +41,3 @@ export const renderDataAheadItem = (d) => {
   dayAheadItem.append(dayAheadData.element);
   daysAheadContainer.append(dayAheadItem.element);
 };
-
