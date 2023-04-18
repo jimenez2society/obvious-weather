@@ -44,7 +44,7 @@ export const createResultsItem = (name, state, country) => {
 };
 export const updateRecentItems = () => {
   let recentsList = JSON.parse(localStorage.getItem("recentActivity"));
-  recentsList.forEach(({ state, name, country }) => {
+  recentsList?.forEach(({ state, name, country }) => {
     let list = document.querySelector(".recentActivity--list");
     let li = document.createElement("li");
     let a = document.createElement("a");
