@@ -6,6 +6,7 @@ import {
 } from "../helpers/elements.js";
 // api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
 export const getCoordByName = async (cityName) => {
+  // api call
   let response = await fetch(
     `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=86157940b5d1a0fde3d98a43fbd8c597`
   );
