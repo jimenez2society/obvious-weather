@@ -202,14 +202,16 @@ const getRecentItem = (city, state) => {
   return foundItem;
 };
 export const updateCurrentCity = (currentCity) => {
-  const { name, state, country } = currentCity;
-  let currentCityContent = document.querySelector(".currentCity--content");
-  currentCityContent.textContent = `${name ? `${name},` : null} ${
-    state ? `${state},` : ""
-  } ${country ? `${country}` : ""}`;
-  let currentCityTitle = document.querySelector(".currentCity--name");
-  currentCityTitle.textContent = `${name ? `${name},` : null} ${
-    state ? `${state},` : ""
-  } ${country ? `${country}` : ""}`;
-  localStorage.setItem("currentCity", JSON.stringify(currentCity));
+  if (currentCity) {
+    const { name, state, country } = currentCity;
+    let currentCityContent = document.querySelector(".currentCity--content");
+    currentCityContent.textContent = `${name ? `${name},` : null} ${
+      state ? `${state},` : ""
+    } ${country ? `${country}` : ""}`;
+    let currentCityTitle = document.querySelector(".currentCity--name");
+    currentCityTitle.textContent = `${name ? `${name},` : null} ${
+      state ? `${state},` : ""
+    } ${country ? `${country}` : ""}`;
+    localStorage.setItem("currentCity", JSON.stringify(currentCity));
+  }
 };

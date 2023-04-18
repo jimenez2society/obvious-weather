@@ -7,17 +7,17 @@ import {
 // api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
 export const getCoordByName = async (cityName) => {
   let response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=86157940b5d1a0fde3d98a43fbd8c597`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=86157940b5d1a0fde3d98a43fbd8c597`
   );
   let res = await response.json();
   return res;
 };
 export const getWeatherByCoord = async (coords) => {
   let response = await fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?lat=${coords.lat}&lon=${coords.lon}&units=imperial&appid=86157940b5d1a0fde3d98a43fbd8c597`
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${coords.lat}&lon=${coords.lon}&units=imperial&appid=86157940b5d1a0fde3d98a43fbd8c597`
   );
   let responseCurrentWeather = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&units=imperial&appid=86157940b5d1a0fde3d98a43fbd8c597`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&units=imperial&appid=86157940b5d1a0fde3d98a43fbd8c597`
   );
   let resCurrent = await responseCurrentWeather.json();
   let res = await response.json();
@@ -124,7 +124,7 @@ searchForm.addEventListener("submit", async (e) => {
         searchInput.value = "";
         searchResultList.innerHTML = "";
         updateCurrentCity(data);
-        
+
         createRecentItem(e, data);
       });
     });
